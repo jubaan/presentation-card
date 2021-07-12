@@ -1,0 +1,84 @@
+* {
+  font-family: Helvetica, sans-serif;
+  size: 16px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 50px calc(100vh - 60px) 10px;
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* begin - Navbar */
+.main-nav {
+  background-color: #27213c;
+  padding: 0.8em 1em;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.devf,
+.linkedin,
+.github {
+  color: white;
+}
+
+.exercise-title {
+  color: #7192be;
+}
+
+.linkedin,
+.github {
+  font-size: 1.3em;
+  margin-left: 0.7em;
+}
+
+/* end - Navbar */
+
+/* begin - Presentation Card */
+.card {
+  background-color: #fff;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 15px 0px #4d6481;
+}
+/* end- Presentation Card */
+
+footer {
+  background-color: #a44a3f;
+}
